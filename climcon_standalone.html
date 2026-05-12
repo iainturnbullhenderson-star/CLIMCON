@@ -99,6 +99,27 @@
             margin-bottom: 2rem;
         }
         
+        .hero-audio {
+            margin-bottom: 1.5rem;
+            padding: 1rem 1.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .hero-audio-label {
+            font-size: 0.875rem;
+            color: #cbd5e1;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-audio audio {
+            width: 100%;
+        }
+
         .hero-buttons {
             display: flex;
             flex-direction: column;
@@ -368,9 +389,16 @@
                     <span class="highlight">Built for action.</span>
                 </h1>
                 <p class="hero-text">
-                    The Climate Status Index (CSI) distills global risk into a single, simple tier. 
+                    The Climate Status Index (CSI) distills global risk into a single, simple tier.
                     When it moves, we move. No noise, no doom—just the next right step for your region.
                 </p>
+                <div class="hero-audio">
+                    <span class="hero-audio-label">Listen: a word from the founder</span>
+                    <audio controls preload="metadata" src="assets/audio/voiceover.m4a">
+                        Your browser does not support audio playback.
+                        <a href="assets/audio/voiceover.m4a">Download the audio</a>.
+                    </audio>
+                </div>
                 <div class="hero-buttons">
                     <a href="#indicator" class="btn-primary">View Current Status</a>
                     <a href="#join-hub" class="btn-secondary">Become a Regional Hub</a>
